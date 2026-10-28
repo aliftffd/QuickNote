@@ -1,0 +1,17 @@
+[package]
+name = "quicknote"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ratatui = "0.30.2"
+rusqlite = { version = "0.41.0", features = ["bundled"] }
+rust_ann = { version = "0.1.0", path = "CNN-ANN_rust" }
+signal-hook = "0.4.5"
+
+[dev-dependencies]
+tempfile = "3.27.0"
+
+# ponytail: rust_ann's math is unusably slow unoptimized; optimize just it in debug/test builds
+[profile.dev.package.rust_ann]
+opt-level = 3

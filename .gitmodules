@@ -1,0 +1,3 @@
+[submodule "CNN-ANN_rust"]
+	path = CNN-ANN_rust
+	url = https://github.com/aliftffd/CNN-ANN_rust.git
