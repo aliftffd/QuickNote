@@ -1,3 +1,4 @@
 # superpowers plans (local only)
 docs/superpowers/
 /target
+/data/train.tsv

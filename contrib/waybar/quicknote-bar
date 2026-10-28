@@ -1,0 +1,13 @@
+#!/bin/sh
+# Waybar module for QuickNote: note count as text, notes per category as tooltip.
+# Reads the database read-only; safe while QuickNote is open.
+db="${XDG_DATA_HOME:-$HOME/.local/share}/quicknote/notes.db"
+[ -f "$db" ] || { echo '{"text":"0","tooltip":"QuickNote: no notes yet","class":"quicknote"}'; exit 0; }
+rows=$(sqlite3 -readonly -json "$db" "
+  select coalesce(category_manual, category_ai, 'Uncategorized') as c, count(*) as n
+  from notes where body != '' group by c order by n desc, c" 2>/dev/null)
+printf '%s' "${rows:-[]}" | jq -c '{
+  text: "\(map(.n) | add // 0)",
+  tooltip: ("QuickNote\n" + (if length == 0 then "no notes yet" else map("\(.c): \(.n)") | join("\n") end)),
+  class: "quicknote"
+}'

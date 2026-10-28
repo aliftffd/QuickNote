@@ -1,0 +1,175 @@
+idea	bikin fitur export notes ke markdown, pakai template per kategori
+idea	gimana kalau quicknote bisa sync lewat git otomatis tiap malam
+idea	ide: dashboard kecil buat track jam tidur dan mood
+idea	bikin bot telegram yang ngingetin minum air tiap 2 jam
+idea	what if the TUI had a zen mode tanpa status bar
+idea	coba bikin game puzzle sederhana pakai rust dan ratatui
+idea	konten youtube: tutorial rust buat pemula dalam bahasa indonesia
+idea	startup idea: marketplace jasa servis laptop di sekitar kampus
+idea	bikin plugin obsidian buat auto-tag catatan pakai model kecil
+idea	mungkin bisa jual template notion untuk mahasiswa tingkat akhir
+idea	idea for a blog post: kenapa saya pindah dari vscode ke emacs
+idea	bikin playlist lofi khusus buat ngoding malam
+idea	gimana kalau kamar dijadikan mini studio podcast
+idea	side project: aplikasi split bill buat anak kos
+idea	eksperimen: pakai e-ink display buat todo list di meja
+idea	bikin keyboard custom 40% dengan switch silent
+idea	bisa nggak ya bikin CLI buat cek jadwal KRL dari terminal
+idea	ide hadiah ulang tahun ibu: album foto cetak dan surat
+idea	open source tool buat convert pdf jurnal ke markdown yang bersih
+idea	bikin newsletter mingguan tentang tools linux yang jarang diketahui
+idea	konsep: kebun hidroponik kecil di balkon dengan sensor kelembapan
+idea	app idea: habit tracker yang cuma pakai satu tombol
+idea	mungkin coba bikin font pixel sendiri
+idea	script yang otomatis rename screenshot berdasarkan isi window
+idea	what about a weekly review template: wins, blockers, next week
+idea	tulis cerpen tentang programmer yang terjebak di loop waktu
+idea	bikin wallpaper generator dari warna tema terminal
+idea	peluang usaha: kopi susu literan untuk acara kampus
+idea	coba bikin sourdough di akhir pekan
+idea	peta interaktif warung makan murah sekitar kampus
+idea	tulis ulang projek lama pakai arsitektur yang lebih rapi
+idea	gimana kalau notes bisa di-share sebagai link sementara
+idea	visualisasi git history sebagai timeline musik
+idea	fitur baru: pencarian fuzzy di daftar catatan
+idea	brainstorm nama brand: kopi, kode, dan kertas
+idea	template resume ala terminal untuk portfolio
+idea	raspberry pi sebagai server rumah kecil, kayaknya seru
+idea	kepikiran bikin komunitas belajar rust di kota sendiri
+idea	aplikasi pencatat pengeluaran lewat chat bahasa natural
+idea	kalender kuliah otomatis dari file KRS, bisa jadi tool kecil
+idea	sistem reward kecil buat diri sendiri tiap target tercapai
+idea	konsep game: farming sim tapi tanamannya adalah bug yang harus diperbaiki
+idea	widget cuaca minimalis untuk hyprland bar
+idea	gimana kalau semua dotfiles dikelola pakai nix
+idea	bikin klub diskusi buku teknologi tiap bulan
+idea	video: setup thinkpad untuk development di arch linux
+idea	alat bantu belajar kanji dengan spaced repetition
+idea	mode fokus 25 menit langsung dari aplikasi catatan, kenapa nggak
+idea	desain logo baru buat portfolio pakai inkscape
+idea	AI kecil yang nebak mood dari tulisan harian, mungkin project akhir pekan
+kerja	deadline laporan bulanan hari jumat, kirim ke pak budi
+kerja	fix bug login yang error 500 di staging
+kerja	review pull request backend dari dimas sebelum jam 3
+kerja	update dokumentasi API endpoint pembayaran
+kerja	deploy versi 2.3 ke production setelah QA approve
+kerja	balas email klien soal revisi invoice
+kerja	migrasi database ke postgres 16 minggu depan
+kerja	siapkan slide progress project untuk atasan
+kerja	cek log server, ada spike CPU tadi malam
+kerja	refactor modul autentikasi supaya pakai token baru
+kerja	tulis unit test untuk service notifikasi
+kerja	follow up vendor soal kontrak hosting yang mau habis
+kerja	rekap timesheet minggu ini sebelum jam 5
+kerja	perbaiki tampilan dashboard admin di layar kecil
+kerja	setup CI pipeline untuk repo mobile
+kerja	minta aset banner promo ke tim desain
+kerja	hitung estimasi biaya server untuk kuartal depan
+kerja	on-call minggu ini, pastikan alert pagerduty aktif
+kerja	rapikan backlog jira, tutup tiket yang sudah selesai
+kerja	kirim draft proposal ke klien paling lambat besok pagi
+kerja	optimasi query laporan penjualan yang lambat
+kerja	renew sertifikat SSL domain utama
+kerja	buat akun baru untuk karyawan magang
+kerja	siapkan akses repo dan VPN untuk anggota tim baru
+kerja	backup data pelanggan sebelum upgrade sistem
+kerja	cek ulang angka di spreadsheet anggaran divisi
+kerja	input data stok gudang ke sistem ERP
+kerja	perbaiki typo di halaman landing page
+kerja	ajukan cuti ke HR untuk tanggal 12
+kerja	susun SOP penanganan komplain pelanggan
+kerja	monitor performa API setelah rilis kemarin
+kerja	siapkan demo fitur baru untuk klien hari kamis
+kerja	test integrasi payment gateway di sandbox
+kerja	benerin konfigurasi nginx yang bikin redirect loop
+kerja	tulis laporan insiden downtime tadi siang
+kerja	update dependency yang ada vulnerability
+kerja	tanda tangan kontrak kerja dan kirim balik hari ini
+kerja	susun jadwal shift tim support bulan depan
+kerja	isi form penilaian kinerja untuk anggota tim
+kerja	bersihin docker image lama di server build
+kerja	kerjain task sprint: fitur filter tanggal di laporan
+kerja	reimburse biaya transport dinas ke finance
+kerja	rapikan folder google drive tim proyek
+kerja	cek apakah backup otomatis jalan semalam
+kerja	selesaikan revisi desain database dari reviewer
+kerja	tagih pembayaran termin kedua ke klien
+kerja	siapkan environment staging untuk tim QA
+kerja	perbarui dokumen requirement setelah masukan klien
+kerja	pindahkan cron job lama ke scheduler baru
+kerja	lembur malam ini untuk kejar rilis jumat
+meeting	rapat tim jam 10, bahas target sprint dan pembagian tugas
+meeting	standup: kemarin selesai login, hari ini lanjut API, blocker akses server
+meeting	notulen rapat: disepakati rilis diundur seminggu
+meeting	call dengan klien jam 2, mereka minta tambah fitur export
+meeting	agenda sync mingguan: progress, risiko, rencana minggu depan
+meeting	hasil meeting: dimas pegang backend, sari pegang desain
+meeting	one on one dengan manager, bahas rencana karier tahun depan
+meeting	action items dari rapat: update timeline, kirim notulen ke semua peserta
+meeting	kickoff project baru hari senin, hadir tim produk dan engineering
+meeting	ketemu dosen pembimbing jam 1 di ruang dosen
+meeting	retro sprint: yang bagus komunikasi, yang kurang estimasi tugas
+meeting	rapat koordinasi panitia acara kampus, bahas sponsor
+meeting	zoom dengan tim luar negeri jam 9 malam karena beda zona waktu
+meeting	meeting vendor: negosiasi harga lisensi untuk 50 user
+meeting	catatan rapat RT: kerja bakti minggu pagi, iuran naik
+meeting	sprint planning: ambil 8 tiket, prioritas bug pembayaran
+meeting	interview kandidat backend jam 3, siapkan pertanyaan teknis
+meeting	review mingguan dengan atasan, minta feedback presentasi
+meeting	diskusi kelompok tugas akhir di perpustakaan jam 4
+meeting	brainstorming session bareng tim marketing soal kampanye baru
+meeting	rapat evaluasi proyek: anggaran over 10 persen
+meeting	call singkat dengan ops soal incident semalam
+meeting	peserta: andi, rina, joko. keputusan: pakai postgres
+meeting	demo day: presentasi hasil sprint ke stakeholder
+meeting	rapat bulanan divisi, bahas pencapaian dan target Q4
+meeting	sync design dan engineering soal komponen tombol baru
+meeting	diskusi dengan klien: scope fase dua disetujui
+meeting	pertemuan orang tua murid hari sabtu jam 9
+meeting	rapat himpunan mahasiswa, pemilihan ketua baru
+meeting	weekly sync: blocker utama masih di integrasi pihak ketiga
+meeting	call dengan HR soal proses onboarding karyawan baru
+meeting	notulen: anggaran disetujui, mulai pengadaan bulan depan
+meeting	pertemuan dengan mentor, bahas roadmap belajar
+meeting	rapat darurat soal server down, semua tim hadir
+meeting	grooming backlog bareng PO jam 11
+meeting	diskusi teknis arsitektur microservice dengan tim infra
+meeting	catatan call investor: minta update traction tiap bulan
+meeting	rapat panitia seminar, pembagian divisi acara dan humas
+meeting	standup singkat: semua on track, tidak ada blocker
+meeting	hasil diskusi: deadline proposal dimajukan ke tanggal 20
+meeting	meeting dengan supplier bahan baku, minta diskon volume
+meeting	koordinasi dengan tim legal soal kontrak kerja sama
+meeting	bimbingan skripsi online, revisi bab tiga
+meeting	town hall perusahaan: pengumuman struktur organisasi baru
+meeting	rapat persiapan audit internal minggu depan
+meeting	follow up meeting kemarin: kirim ringkasan ke klien
+meeting	sesi tanya jawab dengan tim produk tentang fitur baru
+meeting	pertemuan alumni, rencana reuni akhir tahun
+meeting	call pagi dengan tim jakarta dan bandung untuk sinkronisasi
+meeting	diskusi pembagian tugas proyek kelompok mata kuliah AI
+research	baca paper tentang quantization 4-bit untuk model di edge device
+research	literatur review: perbandingan CNN dan vision transformer untuk dataset kecil
+research	ablation: tanpa batch norm akurasi turun 3 persen
+research	cari dataset citra medis yang lisensinya bebas untuk riset
+research	catatan paper attention is all you need, fokus ke positional encoding
+research	hipotesis: complex-valued network lebih stabil di sinyal radar
+research	hasil eksperimen: learning rate 1e-3 overfit setelah epoch 20
+research	research gap: belum ada benchmark latency model kecil di microcontroller
+research	rangkum metode knowledge distillation dari tiga paper terbaru
+research	cek ulang metrik F1 di tabel hasil, angkanya beda dengan log
+research	baca survey tentang pruning jaringan saraf
+research	replikasi hasil paper resnet di cifar-10, selisih 1 persen
+research	teori: kenapa adam lebih cepat konvergen dibanding sgd
+research	kumpulkan referensi tentang tinyml untuk bab dua
+research	bandingkan tokenisasi karakter vs kata untuk teks bahasa indonesia
+research	cek apakah dataset punya kebocoran antara train dan test
+research	bandingkan energi inferensi di raspberry pi dan jetson nano
+research	analisis error: model sering salah di kelas minoritas
+research	tulis ringkasan metodologi untuk proposal riset
+research	baca ulang paper mobilenet v3 bagian squeeze-excitation
+research	uji statistik t-test untuk membandingkan dua model
+research	pertanyaan riset: apakah augmentasi warna membantu di citra satelit
+research	catat semua hyperparameter eksperimen di spreadsheet
+research	eksplor paper tentang federated learning untuk data kesehatan
+research	plot learning curve dan bandingkan dengan baseline

@@ -47,7 +47,19 @@ fn main() {
 fn run_train(dir: &Path) -> Result<(), Box<dyn Error>> {
     let db_path = dir.join("notes.db");
     db::open(&db_path)?; // create/migrate so training works before the first launch
-    let r = train::train(&db_path, &dir.join("model"), db::now_ms())?;
+    // `quicknote train [--extra FILE.tsv] [--epochs N]`
+    let usage = "usage: quicknote train [--extra FILE.tsv] [--epochs N]";
+    let (mut extra, mut epochs) = (None, train::DEFAULT_EPOCHS);
+    let mut args = std::env::args().skip(2);
+    while let Some(flag) = args.next() {
+        let value = args.next().ok_or(usage)?;
+        match flag.as_str() {
+            "--extra" => extra = Some(PathBuf::from(value)),
+            "--epochs" => epochs = value.parse().ok().filter(|&n| n > 0).ok_or(usage)?,
+            _ => return Err(usage.into()),
+        }
+    }
+    let r = train::train(&db_path, &dir.join("model"), extra.as_deref(), epochs, db::now_ms())?;
     println!(
         "trained on {} notes, tested on {}: accuracy {:.1}%",
         r.n_train,
@@ -55,10 +67,31 @@ fn run_train(dir: &Path) -> Result<(), Box<dyn Error>> {
         r.accuracy * 100.0
     );
     println!("categories: {}", r.labels.join(", "));
+    print_confusion(&r);
     for (cat, n) in r.skipped {
         println!("skipped {cat} ({n} notes, need {})", train::MIN_PER_CATEGORY);
     }
     Ok(())
+}
+
+/// Held-out results as a table: rows = true class, columns = predicted, plus recall per class.
+fn print_confusion(r: &train::Report) {
+    let w = r.labels.iter().map(|l| l.len()).max().unwrap_or(0).max(6);
+    println!("\nconfusion matrix (rows = true, columns = predicted)");
+    print!("{:w$}", "");
+    for l in &r.labels {
+        print!("  {l:>w$}");
+    }
+    println!("  {:>7}", "recall");
+    for (label, row) in r.labels.iter().zip(&r.confusion) {
+        print!("{label:>w$}");
+        for n in row {
+            print!("  {n:>w$}");
+        }
+        let total: usize = row.iter().sum();
+        let hit = row[r.labels.iter().position(|l| l == label).unwrap_or(0)];
+        println!("  {:>6.1}%", 100.0 * hit as f64 / total.max(1) as f64);
+    }
 }
 
 /// Last active note if it still exists, else the newest, else a fresh empty one.
